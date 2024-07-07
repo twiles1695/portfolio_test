@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* cssリセット */
+/* font-family: 'Lovely Time', sans-serif; */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #909090;
+  font-family: "Osaka-等幅", "Osaka-mono", "Kosugi", sans-serif, "游ゴシック体",
+    YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", sans-serif;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 1;
+}
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+/* HEADER */
+.header {
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  position: fixed;
+  justify-content: space-between;
+  display: flex;
+  margin-right: 10%;
+}
+.header_logo {
+  padding-left: 20px;
+  width: 20%;
+}
+.decoration_set {
+  display: flex;
+  position: relative;
+  padding-right: 10%;
+}
+.to_insta {
+  max-width: 100px;
+  margin-right: 10px;
+  position: relative;
+}
+.to_insta_hover {
+  max-width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.to_insta_hover:hover {
+  opacity: 1;
+}
+.to_contact {
+  position: relative;
+  background-color: #d0ab80;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 75px;
+  padding: 5px 10px;
+}
+.header .decoration_set .to_contact_hover {
+  background-color: #d0ab80;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 95px;
+  padding: 5px 10px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.header .decoration_set .to_contact_hover:hover {
+  opacity: 1;
+}
+.to_contact p.lovely_time {
+  font-family: "Lovely Time", sans-serif;
+  text-align: center;
+  border-bottom: #fff 2px dashed;
+  font-size: 18px;
+  padding-bottom: 5px;
+  color: #fdf3e7;
+}
+.to_contact .to_contact_txt {
+  font-family: "Dela Gothic One", sans-serif;
+  padding-top: 5px;
+  color: #fdf3e7;
+}
+@media screen and (max-width: 1100px) {
+  .to_insta {
+    width: 90px;
+  }
+  .to_insta_hover {
+    width: 90px;
+  }
+  .to_contact {
+    height: 75px;
+    padding: 8px 8px 0;
+  }
+  .header .decoration_set .to_contact_hover {
+    height: 80px;
+    padding: 8px 8px;
+  }
+  .to_contact .to_contact_txt {
+    padding-top: 4px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header_logo {
+    width: 30%;
+    margin-top: 5px;
+  }
+  .decoration_set {
+    padding-right: 18%;
+  }
+  .to_insta {
+    width: 60px;
+  }
+  .to_insta_hover {
+    width: 60px;
+  }
+  .to_contact {
+    height: 50px;
+    padding: 5px 5px 0;
+  }
+
+  .header .decoration_set .to_contact_hover {
+    left: 0;
+  }
+  .to_contact p.lovely_time {
+    font-size: 14px;
+  }
+  .to_contact .to_contact_txt {
+    padding-top: 4px;
+    font-size: 10px;
+  }
+}
+/* ナビゲーション */
+.pc_nav {
+  position: absolute;
+  z-index: 99;
+  top: 320px;
+  left: 30px;
+  position: fixed;
+  z-index: 1;
+}
+.pc_nav ul {
+  position: relative;
+}
+.pc_nav ul li + li {
+  padding-top: 20px;
+}
+.pc_nav ul .nav_list01 {
+  width: 30%;
+}
+.pc_nav ul .nav_list02 {
+  width: 45%;
+}
+.pc_nav ul .nav_list03 {
+  width: 40%;
+}
+.pc_nav ul .nav_list04 {
+  width: 45%;
+}
+.pc_nav ul li a .thumb {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  transition: 0.3s;
+}
+.pc_nav ul li a .thumb02 {
+  opacity: 0;
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 45%;
+  transition: 0.3s;
+}
+.pc_nav ul li a .thumb03 {
+  opacity: 0;
+  position: absolute;
+  top: 116px;
+  left: 0;
+  width: 40%;
+  transition: 0.3s;
+}
+.pc_nav ul li a .thumb04 {
+  opacity: 0;
+  position: absolute;
+  top: 175px;
+  left: 0;
+  width: 45%;
+  transition: 0.3s;
+}
+.pc_nav .thumb:hover {
+  opacity: 1;
+}
+.pc_nav ul li .nav_list .pc_nav_btn {
+  width: 50%;
+}
+.sp_nav,
+.sp_btn {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .pc_nav {
+    display: none;
+  }
+  /* ハンバーガー */
+  .sp_btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .sp_btn span {
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #d0ab80;
+    transition: 0.3s;
+  }
+  .sp_btn span::before,
+  .sp_btn span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #d0ab80;
+    transition: 0.3s;
+  }
+  .sp_btn span::before {
+    bottom: 10px;
+  }
+  .sp_btn span::after {
+    top: 10px;
+  }
+  /* ハンバーガーメニュー閉じる */
+  .sp_btn.open span {
+    background: transparent;
+  }
+  .sp_btn.open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  .sp_btn.open span::after {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  /* ハンバーガーメニュー */
+  .sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fdf3e7;
+  }
+  .sp_nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp_nav ul li {
+    width: 263px;
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sp_btn {
+    top: 15px;
+    right: 20px;
+  }
+}
+/* FOOTER */
+.footer {
+  background-color: #fdf3e7;
+  text-align: center;
+  padding: 25px 0;
+}
+.footer .footer_txt {
+  font-size: 12px;
+}
+@media screen and (max-width: 1100px) {
+  .footer {
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 8px 0;
+  }
+  .footer .footer_txt {
+    font-size: 8px;
+  }
+}

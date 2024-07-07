@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILEY-WORKS-</title>
+    <meta name="description" content="山森和美のcontactページです。">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lovely-time" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header_logo"><a href="../index.html"><img class="smiley_logo" src="../images/nav_logo@2x.webp"
+                        alt="SMILEY"></a></div>
+
+            <div class="decoration_set">
+                <div class="decoration"></div>
+                <div class="to_contact"><a href="">
+                        <p class="lovely_time">CONTACT</p>
+                        <p class="to_contact_txt">コチラから</p>
+                        <div class="to_contact_hover">
+                            <p class="lovely_time">CONTACT</p>
+                            <p class="to_contact_txt">コチラから</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="../index.html"><img src="../images/top_hover_nav@2x.webp" alt="TOP"></a>
+                    </li>
+                    <li><a href="../about/index.html"><img src="../images/about_hover_nav@2x.webp" alt="ABOUT US"></a>
+                    </li>
+                    <li><a href="../works/index.html"><img src="../images/works_hover_nav@2x.webp" alt="WORKS"></a>
+                    </li>
+                    <li><a href="index.html"><img src="../images/contact_hover_nav@2x.webp" alt="CONTACT"></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div>
+        <nav class="pc_nav">
+            <ul>
+                <li class="nav_list01"><a href="../index.html"><img src="../images/top_nav@2x.webp" alt="TOP">
+                        <div class="thumb"><img src="../images/top_hover_nav@2x.webp" alt=""></div>
+                    </a></li>
+                <li class="nav_list02"><a href="../about/index.html"><img src="../images/about_nav@2x.webp"
+                            alt="ABOUT US">
+                        <div class="thumb02"><img src="../images/about_hover_nav@2x.webp" alt=""></div>
+                    </a></li>
+                <li class="nav_list03"><a href="../works/index.html"><img src="../images/works_nav@2x.webp" alt="WORKS">
+                        <div class="thumb03"><img src="images/works_hover_nav@2x.webp" alt=""></div>
+                    </a></li>
+                <li class="nav_list04"><a href="index.html"><img src="../images/contact_hover_nav@2x.webp"
+                            alt="CONTACT">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact">
+        <h1 class="contact_ttl"><img class="contact_ttl_img" src="images/contact_ttl_img@2x.webp" alt="CONTACT"><span
+                class="contact_subttl">お問い合わせ</span></h1>
+        <div class="contact_txt_wrap">
+            <p class="contact_txt">就職に関わるご連絡お待ちしております。<br>もちろんデザインに関する、<br>お仕事・ご相談もお受けしております。</p>
+        </div>
+        <form class="contact_form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdf61EbA-u9kqZIQd7s1GoSvUmm5VFcGGbNzGsMNTPAQby8Kg/formResponse?pli=1"
+            target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="contact_form_contents contact_form_name">
+                <label for="name">お名前</label>
+                <input class="contact_form_contents_wrap" id="name" type="text" name="entry.2005620554" placeholder="" required>
+            </div>
+            <div class="contact_form_contents  contact_form_email">
+                <label for="email">メールアドレス</label>
+                <input class="contact_form_contents_wrap" id="email" type="text" name="entry.1045781291" placeholder="" required>
+            </div>
+            <div class="contact_form_contents  contact_form_tell">
+                <label for="tell">電話番号</label>
+                <input class="contact_form_contents_wrap" id="tell" type="text" name="entry.1166974658" placeholder="" required>
+            </div>
+            <div class="contact_form_contents">
+                <label for="msg">お問い合わせ内容</label>
+                <textarea class="contact_form_contents_wrap contact_form_txt" id="msg" name="entry.839337160"
+                    placeholder="お気軽にお問い合わせください。" required></textarea>
+            </div>
+            <button class="contact_form_btn" type="submit" name="button" value="送信">送信</button>
+            <script type="text/javascript">
+                var submitted = false;
+            </script>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                onload="if(submitted){window.location='thanks.html';}"></iframe>
+        </form>
+    </div>
+    <footer class="footer">
+        <div>
+            <p class="footer_txt"><small>&copy;2024 KazumiYamamori All Rights Reserved.</small></p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+
+</html>
